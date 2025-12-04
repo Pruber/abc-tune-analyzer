@@ -184,7 +184,7 @@ class TuneAnalyzer:
             print("No data to plot.")
             return
             
-        counts = df['key_clean'].value_counts().head(10) # Show top 10
+        counts = df['key_sig'].value_counts().head(10) # Show top 10
         counts.plot(kind='bar', color='skyblue')
         plt.title('Distribution of Musical Keys')
         plt.xlabel('Key')
